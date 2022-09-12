@@ -1,0 +1,1 @@
+export const RES_DATA = "RES_DATA"

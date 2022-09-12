@@ -1,0 +1,19 @@
+#errorStyle{
+  color: red; 
+  text-align: left;
+  width: 50%;
+  margin-left: 4.7%;
+}
+#textInputStyle{
+  width: 50%;
+  align-self: center;
+}
+#alignVertical{
+  /* vertical-align: middle; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#smallMargin{
+  margin-top: 5px;
+}
