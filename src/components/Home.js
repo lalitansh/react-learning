@@ -46,10 +46,12 @@ const Home=()=>{
   return(
     <>
 
-<div className='App'>
+<div className='App' >
 
 <div id='rowStyle' className='row' //style={{flexDirection:'row', justifyContent:'space-between', margin: '0'}}
+style={{backgroundImage: "linear-gradient(to right, #87CEFA, #8470FF)" }}
 >
+
 <Drawer />
 <h1>Famous Places of India</h1>  
 <FaceIcon
