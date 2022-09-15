@@ -54,7 +54,7 @@ const Users=()=> {
       password: form.password
     }
     setLocalStorage('User', User)
-    navigate('/home', {replace: true})
+    navigate('/', {replace: true})
   }
 
   const setErrorLabel=(value)=>{

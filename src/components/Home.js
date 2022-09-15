@@ -6,6 +6,7 @@ import FaceIcon from '@mui/icons-material/Face';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import { getLocalStorage , clearLocalStorage} from '../storage/storage';
 import { useNavigate } from 'react-router-dom';
+import Drawer from '../navigation/Drawer/Drawer';
 const Home=()=>{
   const user = getLocalStorage('User')
   const navigate = useNavigate()
@@ -38,12 +39,15 @@ const Home=()=>{
     <>
 
 <div className='App'>
-<div>
+
+<div id='rowStyle' className='row' //style={{flexDirection:'row', justifyContent:'space-between', margin: '0'}}
+>
+<Drawer />
 <h1>Famous Places of India</h1>  
-{user && <FaceIcon
-  style = {{fontSize: 50, position: 'absolute', right : 0, top: 0}}
-  onClick = {()=>submit()}
-   />}
+<FaceIcon
+  style = {{fontSize: 50}}
+  onClick = {()=> user ? submit() : navigate('/login')}
+   />
 
 </div>
 <Menu places={PLACES} />

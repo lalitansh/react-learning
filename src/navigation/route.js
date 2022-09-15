@@ -25,11 +25,11 @@ const NavigationRoutes=()=> {
 			 <div className='App'>
 				<Routes>
 				{	user ? 
-				<Route exact path="/home" element={<Home />}  /> :
+				<Route exact path="/" element={<Home />}  /> :
 				<Route exact path="/login" element={<Users />}  />
 				}
-				{/* <Route exact path="/tab" element={<RootTab />} /> */}
-				<Route exact path="/home" element={<Home />}  />
+				<Route exact path="/tab" element={<RootTab />} />
+				<Route exact path="/" element={<Home />}  />
         <Route exact path="/login" element={<Users />}  />
 				<Route exact path="/greet" element={<Greet />}  />
 				<Route element={Error} />
